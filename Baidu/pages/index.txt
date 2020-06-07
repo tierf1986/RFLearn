@@ -1,0 +1,12 @@
+*** Variables ***
+${Index_address}                      http://www.baidu.com
+${Index_hotsearch_content}            css=ul#hotsearch-content-wrapper
+${Index_hotsearch_1_content}          css=ul#hotsearch-content-wrapper li[data-index='0']
+${Index_hotsearch_2_content}          css=ul#hotsearch-content-wrapper li[data-index='1']
+${Index_hotsearch_3_content}          css=ul#hotsearch-content-wrapper li[data-index='2']
+${Index_hotsearch_4_content}          css=ul#hotsearch-content-wrapper li[data-index='3']
+${Index_hotsearch_5_content}          css=ul#hotsearch-content-wrapper li[data-index='4']
+${Index_hotsearch_6_content}          css=ul#hotsearch-content-wrapper li[data-index='5']
+
+
+

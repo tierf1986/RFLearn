@@ -1,0 +1,30 @@
+*** Settings ***
+Library             SeleniumLibrary
+Resource            ../../../Common/GlobalVariables.txt
+Resource            ../../pages/index.txt
+
+
+
+
+*** Test Cases ***
+Prepare
+    open browser    ${Index_address}    ${BrowserType}
+    wait until page contains element    ${Index_hotsearch_content}
+
+Index open
+    ${Index_hotsearch_1_text}    get text    ${Index_hotsearch_1_content}
+    ${Index_hotsearch_2_text}    get text    ${Index_hotsearch_2_content}
+    ${Index_hotsearch_3_text}    get text    ${Index_hotsearch_3_content}
+    ${Index_hotsearch_4_text}    get text    ${Index_hotsearch_4_content}
+    ${Index_hotsearch_5_text}    get text    ${Index_hotsearch_5_content}
+    ${Index_hotsearch_6_text}    get text    ${Index_hotsearch_6_content}
+    log    ${Index_hotsearch_1_text}
+    log    ${Index_hotsearch_2_text}
+    log    ${Index_hotsearch_3_text}
+    log    ${Index_hotsearch_4_text}
+    log    ${Index_hotsearch_5_text}
+    log    ${Index_hotsearch_6_text}
+
+clean and exit
+    close all browsers
+
